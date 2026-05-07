@@ -9,8 +9,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
       integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
       crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+      referrerpolicy="no-referrer"/>
     <!-- link css -->
     <link rel="stylesheet" href="style.css" />
     <title>My_Personal_portfolio || Abdullah Azeem</title>
@@ -19,7 +18,7 @@
     <!-- header -->
     <header>
       <a href="#" class="logo">My Portfolio</a>
-      <i class="fa-solid fa-bars" id="menu-icon"></i>
+      <i id="menu-icon" class="fa-solid fa-bars"></i>
 
       <nav class="navbar">
         <a href="#home" class="active">Home</a>
@@ -36,7 +35,7 @@
       <div class="home-content">
         <h3>Hi, Myself</h3>
         <h1>Abdullah Azeem</h1>
-        <h3>And I'm a <span>Frontend Developer</span></h3>
+        <h3>And I'm a <span class="multiple-text"></span></h3>
         <p>
           I am a passionate web developer skilled in HTML, CSS, and JavaScript.
           I am currently learning React and aiming to become a full-stack
@@ -45,13 +44,12 @@
         </p>
 
         <div class="social-media">
-          <a href="#"><i class="fa-brands fa-instagram"></i></a>
-          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-          <a href="#"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.instagram.com/4bdullah_sheikh/?next=%2F&hl=en"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/abdullah-azeem-04635537a/"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://github.com/AbdullahAzeemdev"><i class="fa-brands fa-github"></i></a>
         </div>
-
-        <a href="#" class="btn">Download Portfolio</a>
-      </div>
+       
+    </div>
 
       <div class="home-img">
         <img src="images/image.png" alt="" />
@@ -129,7 +127,7 @@
       <div class="portfolio-layer">
         <h4>My Password App</h4>
         <p>Generate strong and secure passwords easily.</p>
-        <a href="https://app.netlify.com/projects/my-password-app/" target="_blank">
+        <a href="https://my-password-app.netlify.app/" target="_blank">
           <i class="fa-solid fa-arrow-up-right-from-square"></i>
         </a>
       </div>
@@ -151,7 +149,7 @@
       <div class="portfolio-layer">
         <h4>Currency Converter</h4>
         <p>Fast and simple currency conversion tool built with JS.</p>
-        <a href="https://app.netlify.com/projects/currency-pro-converter/" target="_blank">
+        <a href="https://currency-pro-converter.netlify.app/" target="_blank">
           <i class="fa-solid fa-arrow-up-right-from-square"></i>
         </a>
       </div>
@@ -173,7 +171,7 @@
       <div class="portfolio-layer">
         <h4>Calculator App</h4>
         <p>A simple calculator built with HTML, CSS, and JavaScript.</p>
-        <a href="https://app.netlify.com/projects/abdullahazeemdev-calculator/" target="_blank">
+        <a href="https://abdullahazeemdev-calculator.netlify.app/" target="_blank">
           <i class="fa-solid fa-arrow-up-right-from-square"></i>
         </a>
       </div>
@@ -184,21 +182,29 @@
 
 
 <!-- contact section -->
+
  <section class="contact" id="contact">
+
+
     <h2 class="heading">CONTACT <span>ME</span> </h2>
 
-    <form action="#">
-          <div class="input-box">
-            <input type="text" placeholder="Full Name" />
-            <input type="email" placeholder="Email"  />
-          </div>
-          <div class="input-box">
-            <input type="number" placeholder="Mobile Number" />
-            <input type="text" placeholder="Email subject"/>
-          </div>
-          <textarea name="id" cols="30" rows="10" placeholder="Your Message"></textarea>
-          <input type="submit" value="Send Message" class="btn" />
-    </form> 
+  <form onsubmit="sendMessage(event)">
+
+  <div class="input-box">
+    <input type="text" id="name" placeholder="Full Name" required />
+    <input type="email" id="email" placeholder="Email" required />
+  </div>
+
+  <div class="input-box">
+    <input type="number" id="phone" placeholder="Mobile Number" required />
+    <input type="text" id="subject" placeholder="Email Subject" required />
+  </div>
+
+  <textarea id="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+
+  <input type="submit" value="Send Message" class="btn" />
+
+</form>
   </section>
 
   <!-- FOOTER desing -->
@@ -213,7 +219,11 @@
 
   </footer>
 
-   <!-- main js -->
+   <!-- js -->
+    
+   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+   <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
+   <script src="https://unpkg.com/scrollreveal"></script>
     <script src="app.js"></script>
 </body>
 </html>
