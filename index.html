@@ -1,6 +1,9 @@
 <!doctype html>
 <html lang="en">
   <head>
+  <meta name="description" content="Abdullah Azeem Frontend Developer Portfolio"/>
+  <meta name="keywords" content="HTML CSS JavaScript React Portfolio"/>
+  <meta name="author" content="Abdullah Azeem"/>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- font awesome  -->
@@ -15,19 +18,44 @@
     <title>My_Personal_portfolio || Abdullah Azeem</title>
   </head>
   <body>
+
+    <div id="progress-bar"></div>
+
+     <!-- Loader -->
+    <div id="loader">
+      <div class="spinner"></div>
+    </div>
+
+    <div class="particles">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+     </div>
+
     <!-- header -->
     <header>
-      <a href="#" class="logo">My Portfolio</a>
-      <i id="menu-icon" class="fa-solid fa-bars"></i>
+   <a href="#" class="logo">My Portfolio</a>
 
-      <nav class="navbar">
-        <a href="#home" class="active">Home</a>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
+   <i id="menu-icon" class="fa-solid fa-bars"></i>
+
+   <nav class="navbar">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+   </nav>
+
+   <div class="theme-toggle">
+      <i class="fa-solid fa-moon" id="theme-toggle"></i>
+   </div>
+</header>
 
     <!-- home section -->
 
@@ -52,25 +80,51 @@
     </div>
 
       <div class="home-img">
-        <img src="images/image.png" alt="" />
+        <img src="images/image.png" alt="Abdullah Azeem" />
       </div>
     </section>
 
-    <!-- about section -->
+<!-- about section -->
 
-    <section class="about" id="about">
-      <div class="about-img">
-        <img src="images/image.png" alt="" />
-      </div>
-      <div class="about-content">
-        <h2 class="heading">ABOUT<span> ME </span></h2>
-        <h3>Frontend Developer</h3>
-        <p>
-          I am a dedicated web developer with strong skills in HTML, CSS, and JavaScript. I focus on creating modern, responsive, and user-friendly web interfaces. Currently, I am learning React and improving my development skills to become a full-stack developer. I am eager to gain real-world experience and contribute to meaningful projects through an internship opportunity.
-        </p>
-        <a href="#" class="btn">Read more</a>
-      </div>
-    </section>
+<section class="about" id="about">
+  <div class="about-img">
+    <img src="images/image.png" alt="Abdullah Azeem" />
+  </div>
+
+  <div class="about-content">
+    <h2 class="heading">ABOUT <span>ME</span></h2>
+    <h3>Frontend Developer</h3>
+
+    <p>
+      I am a dedicated web developer with strong skills in HTML, CSS,
+      and JavaScript. I focus on creating modern, responsive, and
+      user-friendly web interfaces. Currently, I am learning React and
+      improving my development skills to become a full-stack developer.
+      I am eager to gain real-world experience and contribute to
+      meaningful projects through an internship opportunity.
+    </p>
+
+    <a href="#" class="btn">Read More</a>
+  </div>
+</section>
+
+<!-- Skills Section -->
+
+<section class="skills" id="skills">
+
+  <h2 class="heading">My <span>Skills</span></h2>
+
+  <div class="skills-container">
+    <div class="skill">HTML</div>
+    <div class="skill">CSS</div>
+    <div class="skill">JavaScript</div>
+    <div class="skill">Bootstrap</div>
+    <div class="skill">Git & GitHub</div>
+    <div class="skill">React (Learning)</div>
+  </div>
+
+</section>
+
 
     <!-- services section -->
    <section class="services" id="services">
@@ -155,16 +209,18 @@
       </div>
     </div>
 
-    <div class="portfolio-box">
-      <img src="images/image5.avif" alt="Tic Tac Toe Game" />
-      <div class="portfolio-layer">
-        <h4>Tic Tac Toe Game</h4>
-        <p>Fun multiplayer game built using JavaScript logic.</p>
-        <a href="https://tic-tac-toe-by-abdullah.netlify.app/" target="_blank">
-          <i class="fa-solid fa-arrow-up-right-from-square"></i>
-        </a>
-      </div>
-    </div>
+   <div class="portfolio-box">
+  <img src="images/image5.avif" alt="Student Card Generator" />
+
+  <div class="portfolio-layer">
+    <h4>Student Card Generator</h4>
+    <p>Generate student cards easily using JavaScript.</p>
+
+    <a href="https://student-card-portal.netlify.app/" target="_blank" rel="noopener noreferrer">
+      <i class="fa-solid fa-arrow-up-right-from-square"></i>
+    </a>
+  </div>
+  </div>
 
     <div class="portfolio-box">
       <img src="images/image6.avif" alt="Calculator App" />
@@ -196,7 +252,7 @@
   </div>
 
   <div class="input-box">
-    <input type="number" id="phone" placeholder="Mobile Number" required />
+    <input type="tel" id="phone" placeholder="Mobile Number" required />
     <input type="text" id="subject" placeholder="Email Subject" required />
   </div>
 
@@ -211,7 +267,7 @@
 
   <footer class="footer">
      <div class="footer-text">
-      <p>Copyright &copy; 2024 by @abdullahazeem | All rights Reserved</p>
+      <p>© 2026 Abdullah Azeem. Built with HTML, CSS & JavaScript.</p>
      </div>
      <div class="footer-iconTop">
       <a href="#home"><i class="fa-solid fa-angle-up"></i></a>
@@ -219,8 +275,11 @@
 
   </footer>
 
+  <div id="cursor-glow"></div>
+  <div id="particles"></div>
+
    <!-- js -->
-    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
    <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
    <script src="https://unpkg.com/scrollreveal"></script>
